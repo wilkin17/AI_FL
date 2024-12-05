@@ -301,4 +301,4 @@ if __name__ == "__main__":
     )
 
     # Save the averaged losses to a CSV file
-    save_averaged_device_losses("averaged_device_losses.csv")
+    save_averaged_device_losses("fedavg_averaged_device_losses.csv")
