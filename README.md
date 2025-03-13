@@ -2,4 +2,4 @@
 # WILL BE UPDATED SOON TO REFLECT THE CHANGES TO CLIENT AND SERVER FILES
 
 Run instructions:
-Download all provided files. Ensure that Train_Aggregated.csv and Test_Aggregated.csv are in the same level as the server and client files. Before running the server and the clients, make sure that the variable "num_rounds" matches for both. First run the server. Then, run either the FedAvg_client.py or the FedDyn_client.py. When it is done, it will give you a csv file that you can use for data analysis.
+Download all provided files. Ensure that the .csv dataset files are in the same level as the server and client files. Run the server before the client. It will prompt you for method choice (FedAvg, FedDyn, IDA, or Robust Aggregaton), number of rounds, noisy/clean dataset, and seed. After the server starts, you can run either the regular client or the ANOVA client. The ANOVA version of the client file runs the client code a set number of times, incrementing the seed each time. Regardless of the client run, when it finishes a .csv file will be created that has the mean squared error across each device per round.
